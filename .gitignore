@@ -5,3 +5,4 @@ __pycache__/
 **/local-vault.json
 .env*
 .local-backups/
+candidate-standalone/
