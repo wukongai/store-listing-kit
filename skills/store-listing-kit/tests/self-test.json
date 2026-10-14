@@ -1,0 +1,38 @@
+{
+  "tests": [
+    {
+      "id": "package-regression",
+      "script": "tests/test_audit.py",
+      "expected_exit": 0,
+      "stdout_contains": [
+        "PASS 8"
+      ],
+      "timeout_seconds": 10
+    },
+    {
+      "id": "ob-destination",
+      "script": "tests/test_destination.py",
+      "expected_exit": 0,
+      "stdout_contains": [
+        "PASS 6"
+      ],
+      "timeout_seconds": 10
+    },
+    {
+      "id": "upload-checklist",
+      "script": "tests/test_checklist.py",
+      "expected_exit": 0,
+      "stdout_contains": [
+        "PASS checklist"
+      ],
+      "timeout_seconds": 10
+    },
+    {
+      "id": "course-outline",
+      "script": "tests/test_outline.py",
+      "expected_exit": 0,
+      "timeout_seconds": 10
+    }
+  ],
+  "schema_version": "1.0"
+}

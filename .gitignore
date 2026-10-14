@@ -1,0 +1,7 @@
+candidate/
+.skill-engineering/
+__pycache__/
+.DS_Store
+**/local-vault.json
+.env*
+.local-backups/

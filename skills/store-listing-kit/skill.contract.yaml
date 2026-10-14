@@ -1,0 +1,13 @@
+name: store-listing-kit
+version: 0.2.1
+profile: personal
+kind: workflow
+inputs: [product_sources, scope, optional_platform_specs]
+outputs: [carousel_images, detail_images, copy, delivery_files, html_index, manifest, audit]
+stops: [missing_real_business_values, unavailable_required_asset, unsafe_path]
+delegates: [image-factory]
+forbidden: [credentials, fake_testimonials, auto_publish, production_permission_changes]
+approvals: [external_side_effects, overwrite_existing_files]
+scripts: [scripts/audit_package.py, scripts/check_destination.py, scripts/render_upload_checklist.py, scripts/check_course_outline.py]
+tests: [tests/test_audit.py, tests/test_destination.py, tests/test_checklist.py, tests/test_course_slots.py, tests/test_outline.py]
+destination: ob_product_marketing_directory

@@ -1,0 +1,26 @@
+{
+  "product_id": "example-replace-with-new-uuid",
+  "revision": "v1",
+  "title": "示例商品上传清单",
+  "scope": "standalone",
+  "summary": "请替换成新商品实际信息",
+  "note": "示例仅演示结构；先准备真实素材和业务参数。",
+  "steps": [
+    {
+      "id": "product-name",
+      "title": "填写商品名称",
+      "status": "pending",
+      "instruction": "生成本商品真实名称后复制填写。",
+      "files": [
+        "03-可复制文案/01-商品名称.txt"
+      ]
+    },
+    {
+      "id": "delivery",
+      "title": "核验交付范围与领取",
+      "status": "pending",
+      "instruction": "按本商品实际交付方式核验；需要账号时走通开通和领取。",
+      "files": []
+    }
+  ]
+}
