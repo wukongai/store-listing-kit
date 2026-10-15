@@ -37,3 +37,5 @@ Python 3.10+；图片审计测试需要 Pillow。运行 `python3 -m unittest dis
 ## 管理约定
 
 本仓库是本Skill的唯一源码来源。Skill Hub仅登记来源、profile和安装入口，不复制维护内容。今后新建Skill优先各自独立仓库；本次不迁移其他既有Skill。
+
+图片工厂已提供可运行的 API 接入入口：没有 Agent 内置生图工具时，用终端隐藏输入自己的 Key，或通过环境变量配置，实际生成后仍接回本 Skill 的图片回执和 HTML 清单。见 [生图接入教程](https://github.com/wukongai/image-factory-public/blob/main/skills/image-factory/docs/生图接入.md)。不要把 Key 发到聊天或放入商品资料包。
