@@ -1,5 +1,5 @@
 name: store-listing-kit
-version: 0.2.1
+version: 0.3.0
 profile: personal
 kind: workflow
 inputs: [product_sources, scope, optional_platform_specs]

@@ -43,3 +43,29 @@ Python 3.10+；图片审计测试需要 Pillow。运行 `python3 -m unittest dis
 ## 用户使用手册
 
 对外分享请使用[布丁小店安装与使用手册](https://aixiaoai.cloud/cases/cmv9zjvpj001epo4djz75wlj1)。配套[图片工厂简易公开版手册](https://aixiaoai.cloud/cases/cmv9zjeip001dpo4d6w4xgqgi)说明生图接入及模板扩展。小店会检测图片工厂；已授权配套安装时自动补齐缺失依赖，不覆盖现有同名版本。
+
+## 版本与以后升级
+
+当前正式版本：**v0.3.0**。仓库地址、Skill 名称和普通安装命令保持不变：
+
+```bash
+npx skills add wukongai/store-listing-kit --skill store-listing-kit
+```
+
+这条命令读取默认分支，不是自动下载 GitHub Latest Release。每次正式发版会更新版本号、通过测试、同步默认分支，再新增对应标签与 Release；旧标签保持不变。
+
+已安装用户不会自动升级。在原项目内更新项目级安装：
+
+```bash
+npx skills update store-listing-kit --project
+```
+
+全局安装使用 `--global` 替代 `--project`。更新前备份自己改过的模板；保持原安装范围与宿主 Agent，不改变安装位置。固定版本或私人修改版先让 Agent 核对来源，不能直接覆盖。
+
+需要固定本次版本时：
+
+```bash
+npx skills add https://github.com/wukongai/store-listing-kit/tree/v0.3.0 --skill store-listing-kit
+```
+
+这里的 GitHub 地址是安装源，日常阅读和分享仍使用布丁手册。

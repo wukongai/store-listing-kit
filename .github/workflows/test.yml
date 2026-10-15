@@ -1,0 +1,16 @@
+name: Skill tests
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: |
+          python3 -B skills/store-listing-kit/tests/test_audit.py
+          python3 -B skills/store-listing-kit/tests/test_destination.py
+          python3 -B skills/store-listing-kit/tests/test_checklist.py
+          python3 -B skills/store-listing-kit/tests/test_course_slots.py
+          python3 -B skills/store-listing-kit/tests/test_outline.py
