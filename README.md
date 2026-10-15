@@ -39,3 +39,7 @@ Python 3.10+；图片审计测试需要 Pillow。运行 `python3 -m unittest dis
 本仓库是本Skill的唯一源码来源。Skill Hub仅登记来源、profile和安装入口，不复制维护内容。今后新建Skill优先各自独立仓库；本次不迁移其他既有Skill。
 
 图片工厂已提供可运行的 API 接入入口：没有 Agent 内置生图工具时，用终端隐藏输入自己的 Key，或通过环境变量配置，实际生成后仍接回本 Skill 的图片回执和 HTML 清单。见 [生图接入教程](https://github.com/wukongai/image-factory-public/blob/main/skills/image-factory/docs/生图接入.md)。不要把 Key 发到聊天或放入商品资料包。
+
+## 用户使用手册
+
+对外分享请使用[布丁小店安装与使用手册](https://aixiaoai.cloud/cases/cmv9zjvpj001epo4djz75wlj1)。配套[图片工厂简易公开版手册](https://aixiaoai.cloud/cases/cmv9zjeip001dpo4d6w4xgqgi)说明生图接入及模板扩展。小店会检测图片工厂；已授权配套安装时自动补齐缺失依赖，不覆盖现有同名版本。
