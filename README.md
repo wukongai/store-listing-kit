@@ -12,6 +12,16 @@
 
 执行 `npx skills add wukongai/store-listing-kit`，按交互选择项目与Agent。也可克隆源码后由 Skill Hub 登记 `skills/store-listing-kit` 并分发符号链接。仓库已公开，无需申请仓库访问权限。
 
+## 安装配套图片工厂
+
+[图片工厂公开版](https://github.com/wukongai/image-factory-public) 提供方形主图、详情海报、营销及参考改版模板，输出真实 PNG 和审核回执，可直接接入本 Skill 的 HTML 清单。
+
+```bash
+npx skills add wukongai/image-factory-public --skill image-factory
+```
+
+用户使用自己 Agent 的生图工具或已配置的 API/MCP，不需要作者的 IP、API Key 或私有服务。完整教程见[图片工厂使用手册](https://github.com/wukongai/image-factory-public/blob/main/skills/image-factory/docs/使用手册.md)。安装两者后直接说：“用 store-listing-kit 准备上架素材，图片任务交给 image-factory，完成后加入 HTML 交接清单。”
+
 ## 本机配置
 
 参见 skills/store-listing-kit/references/local-config.md。真实课程、图片、账号及本机配置不进入本仓库。
