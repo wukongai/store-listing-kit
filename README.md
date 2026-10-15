@@ -10,7 +10,7 @@
 
 ## 安装
 
-通过有仓库权限的账号执行 `npx skills add wukongai/store-listing-kit`，按交互选择项目与Agent。也可克隆源码后由 Skill Hub 登记 `skills/store-listing-kit` 并分发符号链接。仓库当前为私有，未授权账号不能安装。
+执行 `npx skills add wukongai/store-listing-kit`，按交互选择项目与Agent。也可克隆源码后由 Skill Hub 登记 `skills/store-listing-kit` 并分发符号链接。仓库已公开，无需申请仓库访问权限。
 
 ## 本机配置
 
